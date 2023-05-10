@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="f52rihW0sQ8i86ak_IPI" name="第 1 页">
-        <mxGraphModel dx="1835" dy="626" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="2582" dy="1016" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -131,6 +131,50 @@
                 </mxCell>
                 <mxCell id="74" value="搜索 hashtag server" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
                     <mxGeometry x="-175" y="180" width="150" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="79" value="ziya-stream-processing" style="swimlane;whiteSpace=wrap;html=1;dashed=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+                    <mxGeometry x="-190" y="660" width="330" height="140" as="geometry">
+                        <mxRectangle x="360" y="300" width="170" height="30" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="80" value="数据采样/过滤" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="79">
+                    <mxGeometry x="20" y="50" width="90" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="81" value="sample join" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="79">
+                    <mxGeometry x="220" y="50" width="90" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="82" value="feature extract" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="79">
+                    <mxGeometry x="120" y="50" width="90" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="83" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.81;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="84" target="86">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="84" value="点展聚合" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-470" y="710" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="85" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="86" target="80">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="86" value="点展 kafka" style="shape=dataStorage;whiteSpace=wrap;html=1;fixedSize=1;direction=west;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+                    <mxGeometry x="-310" y="700" width="100" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="87" value="kai 模型训练" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+                    <mxGeometry x="300" y="710" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="88" style="edgeStyle=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="89" target="82">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="89" value="jubao rpc" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+                    <mxGeometry x="-85" y="820" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="90" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="91" target="87">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="91" value="样本 kafka" style="shape=dataStorage;whiteSpace=wrap;html=1;fixedSize=1;direction=west;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+                    <mxGeometry x="160" y="700" width="100" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="92" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.8;entryY=0.494;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="81" target="91">
+                    <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
