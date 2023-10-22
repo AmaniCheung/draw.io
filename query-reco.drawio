@@ -467,10 +467,10 @@
                         <mxGeometry x="792" y="1584.5" width="35" height="20" as="geometry"/>
                     </mxCell>
                 </UserObject>
-                <mxCell id="225" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;strokeWidth=5;strokeColor=#999999;fontSize=12;fontStyle=1" parent="1" edge="1">
+                <mxCell id="225" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=10;strokeColor=#B3B3B3;fontSize=12;fontStyle=1" parent="1" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="772" y="939.5" as="sourcePoint"/>
-                        <mxPoint x="772" y="1677.5" as="targetPoint"/>
+                        <mxPoint x="766" y="973" as="sourcePoint"/>
+                        <mxPoint x="766" y="1649" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
             </root>
